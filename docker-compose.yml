@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  next_site:
+    container_name: react_site
+    build: ./react_site
+    restart: on-failure
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./react_site:/app"
