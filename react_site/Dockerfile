@@ -1,4 +1,5 @@
 FROM node:latest
-CMD npm update -g npm
+RUN npm update -g npm
 WORKDIR /app
+RUN npm install react next
 CMD ["npm", "start"]
